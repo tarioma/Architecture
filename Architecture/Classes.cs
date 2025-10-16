@@ -2,7 +2,7 @@ using System.Numerics;
 
 namespace Architecture;
 
-// Входные данные для обучения (приходит много таких в ITrainer) и прогноза (приходит один в IPredictor)
+// Входные данные для обучения (приходит много таких тренеру) и прогноза (приходит один прогнозисту)
 public abstract record Data;
 
 // Входные данные для любой версии хлеба
@@ -17,7 +17,7 @@ public record BreadDataV2(decimal WheatPrice, decimal GasPrice) : BreadData;
 // Входные данные для любой версии подшипника
 public abstract record BearingData : Data;
 
-// Входные данные для первой версии подшипника с силовй трения
+// Входные данные для первой версии подшипника с силой трения
 public record BearingDataV1(double Friction) : BearingData;
 
 // Результат прогноза, может быть любым числом
