@@ -2,7 +2,7 @@ using System.Numerics;
 
 namespace Architecture;
 
-// Входные данные для обучения (приходит много таких в ITrainer) и прогноза (приходит один в IForecast)
+// Входные данные для обучения (приходит много таких в ITrainer) и прогноза (приходит один в IPredictor)
 public abstract record Data;
 
 // Входные данные для любой версии хлеба
